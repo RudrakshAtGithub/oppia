@@ -419,8 +419,7 @@ export class TranslationSuggestionReviewModalComponent implements OnInit {
   acceptAndReviewNext(): void {
     this.finalCommitMessage = this.generateCommitMessage();
     if (this.translationUpdated) {
-      this.reviewMessage = this.reviewMessage + ': This suggestion' +
-        ' was submitted with reviewer edits.';
+      this.reviewMessage = this.reviewMessage + 'This suggestion was submitted with reviewer edits.';
     }
     this.resolvingSuggestion = true;
     this.siteAnalyticsService.registerContributorDashboardAcceptSuggestion(
